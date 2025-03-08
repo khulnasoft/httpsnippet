@@ -1,8 +1,8 @@
 #import <Foundation/Foundation.h>
 
-NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://mockbin.com/har?foo[bar]=baz,zap&fiz=buz&key=value"]
-                                                       cachePolicy:NSURLRequestUseProtocolCachePolicy
-                                                   timeoutInterval:10.0];
+NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://mockbin.com/har?foo%5Bbar%5D=baz%2Czap&fiz=buz&key=value"]
+                                                   cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                               timeoutInterval:10.0];
 [request setHTTPMethod:@"GET"];
 
 NSURLSession *session = [NSURLSession sharedSession];
