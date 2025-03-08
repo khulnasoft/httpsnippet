@@ -312,10 +312,12 @@ export class HTTPSnippet {
       ...uriObj,
     }); //?
 
+    const decodedFullUrl = decodeURIComponent(fullUrl);
+    
     return {
       ...request,
       allHeaders,
-      fullUrl,
+      fullUrl: decodedFullUrl,
       url,
       uriObj,
     };
