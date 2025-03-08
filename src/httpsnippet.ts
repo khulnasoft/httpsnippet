@@ -311,13 +311,14 @@ export class HTTPSnippet {
       ...urlWithParsedQuery,
       ...uriObj,
     }); //?
-
+    // Decode only for display purposes
     const decodedFullUrl = decodeURIComponent(fullUrl);
 
     return {
       ...request,
       allHeaders,
-      fullUrl: decodedFullUrl,
+      fullUrl: decodedFullUrl, // Used for display only
+      rawFullUrl: fullUrl, // Keep the encoded version for actual requests
       url,
       uriObj,
     };
