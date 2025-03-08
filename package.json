@@ -1,9 +1,9 @@
 {
-  "version": "3.0.9",
-  "name": "httpsnippet",
+  "version": "3.0.7",
+  "name": "@khulnasoft/httpsnippet",
   "description": "HTTP Request snippet generator for *most* languages",
-  "author": "Kong <office@konghq.com>",
-  "homepage": "https://github.com/Kong/httpsnippet",
+  "author": "KhulnaSoft Team <support@khulnasoft.com>",
+  "homepage": "https://github.com/KhulnaSoft/httpsnippet",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -41,11 +41,11 @@
     "xmlhttprequest"
   ],
   "engines": {
-    "node": "^14.19.1 || ^16.14.2 || ^18.0.0 || ^20.0.0"
+    "node": "^14.19.1 || ^16.14.2 || ^18.0.0 "
   },
-  "repository": "Kong/httpsnippet",
+  "repository": "KhulnaSoft/httpsnippet",
   "bugs": {
-    "url": "https://github.com/Kong/httpsnippet/issues"
+    "url": "https://github.com/KhulnaSoft/httpsnippet/issues"
   },
   "scripts": {
     "clean": "tsc --build tsconfig.build.json --clean",
@@ -60,7 +60,9 @@
     "lint:markdown:fix": "markdownlint-cli2-fix \"**/*.md\" \"#**/node_modules\"",
     "build": "tsc --build tsconfig.build.json",
     "build:types": "tsc -d --declarationDir dist/lib --declarationMap --emitDeclarationOnly",
-    "test": "jest"
+    "test": "jest",
+    "dev": "tsc --watch --preserveWatchOutput",
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
     "@types/eslint": "^8.4.1",
