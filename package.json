@@ -3,7 +3,7 @@
   "name": "@khulnasoft/httpsnippet",
   "description": "HTTP Request snippet generator for *most* languages",
   "author": "KhulnaSoft Team <support@khulnasoft.com>",
-  "homepage": "https://github.com/KhulnaSoft/httpsnippet",
+  "homepage": "https://github.com/Khulnasoft/httpsnippet",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -43,9 +43,9 @@
   "engines": {
     "node": "^14.19.1 || ^16.14.2 || ^18.0.0 "
   },
-  "repository": "KhulnaSoft/httpsnippet",
+  "repository": "Khulnasoft/httpsnippet",
   "bugs": {
-    "url": "https://github.com/KhulnaSoft/httpsnippet/issues"
+    "url": "https://github.com/Khulnasoft/httpsnippet/issues"
   },
   "scripts": {
     "clean": "tsc --build tsconfig.build.json --clean",
@@ -81,7 +81,7 @@
     "eslint-plugin-jest-formatting": "^3.1.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "jest": "^27.5.1",
-    "markdownlint-cli2": "^0.5.1",
+    "markdownlint-cli2": "^0.17.2",
     "prettier": "^2.6.2",
     "ts-jest": "^27.1.4",
     "type-fest": "^2.12.2",

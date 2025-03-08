@@ -313,7 +313,7 @@ export class HTTPSnippet {
     }); //?
 
     const decodedFullUrl = decodeURIComponent(fullUrl);
-    
+
     return {
       ...request,
       allHeaders,
